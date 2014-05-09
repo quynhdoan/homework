@@ -1,8 +1,5 @@
-##Hireology Software Engineer Homework
-
-### Instructions
-
-There are two parts to the Software Engineer Homework set. Part 1 is written answer, and Part 2 is a set of programmable problems. Please fork this repo to your GitHub account, add your work to the forked repo, and send a pull request when your work is complete.
+## Hireology Homework
+This repo contains my solutions to the Software Engineer homework set provided by Hireology.
 
 ###Part 1 - Written Questions
 
