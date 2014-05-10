@@ -1,6 +1,7 @@
 require './parse_model'
 
 class LineParser
+
     def parse_from_file(input_file)
         parsed_lines = []
         File.open(input_file, "r"). each do |line|

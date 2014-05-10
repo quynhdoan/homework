@@ -1,4 +1,4 @@
-class UserRoles
+class UserRole
     attr_accessor :user_id
 
     def initialize(role_id, user_id, org, role)

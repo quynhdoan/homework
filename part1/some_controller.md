@@ -3,15 +3,15 @@ Some Controller
 
 **Question:**
 
-Please take a look at this controller action. Please tell us what you think of this code and how you would make it better.
+Please take a look at [this controller action](https://github.com/Hireology/homework/blob/master/some_controller.rb). Please tell us what you think of this code and how you would make it better.
 
 **Answer:**
 
-The code in this controller action leaves much to be desired. The person who wrote this code very likely has a long background in procedural language (based on the amount of nested `if-else` and `unless` statements present). The code also rarely utilizes many great features of the Ruby language.
+The code in this controller action leaves much to be desired. The person who wrote this code very likely has a deep-rooted background in procedural language (based on the amount of nested `if-else` and `unless` statements present). The code also, rarely utilizes many great features of the Ruby language.
 
-Being a very visual thinker, at first glance, all I wanted to do was to refactor this code. Nevertheless, after spending some time trying to grasp the logic flow, it became apparently to me that wihout any tests in place, refactoring is out of the question. And in order to write tests, I would also need further understanding of the related business logic. Once I'm confident that I have a firm grasp of the function of this controller, I would set up tests to verify each conditional statement. After all tests are checked and passed, I could then focus on refactoring.
+Being a very visual thinker, at first glance, all I wanted to do was to refactor this code. Nevertheless, after spending some time trying to grasp the logic flow, it became apparent to me that wihout any tests in place, refactoring is out of the question. And, in order to write tests, I would also need further understanding of the related business logic. Once I'm confident that I have a firm grasp of the function of this controller, I would set up tests to verify each conditional statement. After all tests are checked and passed, I could then focus on refactoring.
 
-From a visual standpoint, this code does a poor job of being pleasant to look at. I strongly believe that great code should be not only easy to read but also easy on the eyes. There is a very good reason why Ruby is such a joy to program in, and I'm sure being "good looking" is one of them. This code snippet, however, doesn't align with that value. Therefore, I believe an obvious first step is to reduce the amount of visual noise (repetitive code).
+From a visual standpoint, this code does a poor job of being pleasant to look at. I strongly believe that great code should  not only be easy to read, but also easy on the eyes. There is a very good reason why Ruby is such a joy to program in, and I'm sure being "good looking" is one of them. This code snippet, however, doesn't align with that value. Therefore, I believe an obvious first step is to reduce the amount of visual noise (repetitive code).
 
 
 ```ruby
@@ -62,7 +62,7 @@ when view_all
 
 + Create hashes to use as hash conditions.
 
-+ Use `lambda` for block code.
++ Use `lambda` for frequently-used blocks.
 
 ```ruby
 view_a_to_z = "Candidates A -> Z"
@@ -144,7 +144,7 @@ end
 
 These can be our beginning points, and I would keep doing that until my methods are relatively small. Once they are small, I could proceed to name the "leaves" (with the methods acting as the "trees"). The reason I prefer starting at the leaves is because they're mostly built out of primitive items. Items that come from either Ruby or Rails. Therefore, I can give them names that can reasonably reveal their intent. On the other hand, methods (trees) are built based on **ideas** that were introduced by the previous developer(s). With that said, starting at the leaves and going up the trees will allow me to eventually put things in perspective.
 
-My general formula is to take all of the code within an `if`, `else` or `unless` and give them a method name based on their condition. This is of course, only temporary until I can make sense of the code in the "leaves". The `show_candidates` function can now be reduced to this:
+My general formula is to take all of the code inside an `if`, `else` or `unless` and give them a method name based on their condition. This is of course, only temporary until I can make sense of the code in the "leaves". The `show_candidates` function can now be reduced to this:
 
 ```ruby
 def show_candidates
@@ -182,7 +182,7 @@ def show_candidates
 end
 ```
 
-Apply this formula recursively, I ended up with a much cleaner controller action. The methods are organized in a chronological order. The rest of the snippet is included below:
+By applying this formula recursively, I ended up with a much cleaner controller action. The methods are organized in a chronological order. The rest of the snippet is included below:
 
 ```ruby
     def sort_order
@@ -264,4 +264,4 @@ Apply this formula recursively, I ended up with a much cleaner controller action
     end
 ```
 
-Some of the method names are not as meaningful as I would like, but I believe they do a reasonably good job at making the logic easier to follow. Comparing to what we started with, this is much more pleasant to work with. Nevertheless, there is still a lot of room for improvement if this is to become production-ready code. Under the assumptions that my tests are all green, I would further extract some of the left-over conditionals into smaller methods. My primary purpose is to make the code more readable, easier to understand and I only include comments when necessary. I also care a great deal about the visual appeal of my code. It might seem superficial but adhereing to a style structure has allowed me to spot errors simply because they look out of place.
+Some of the method names are not as meaningful as I would like, but I believe they do a reasonably good job at making the logic easier to follow. Compared to what we started with, this is much more pleasant to work with. Nevertheless, there is still a lot of room for improvement if this is to become production-ready code. Under the assumption that my tests are all green, I would further extract some of the left-over conditionals into smaller methods. My primary purpose is to make the code more readable, easier to understand, and include comments when necessary. I also, care a great deal about the visual appeal of my code. It might seem superficial, but adhereing to a style structure has allowed me to spot errors simply because they look out of place.

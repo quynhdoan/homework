@@ -1,13 +1,30 @@
 ## Hireology Homework
 This repo contains my solutions to the Software Engineer homework set provided by Hireology.
 
-###Part 1 - Written Questions
+The solution set has yet to be completed. Below is a list of items that are included:
+
+#### Part 1 (Writen Questions)
+    + Question 1: Memcache (Completed)
+    + Question 2: SomeController (Completed)
+
+#### Part 2 (Programming Problems)
+    + Question 1: File Parser using Regex and JSON serializer. (Completed)
+    + Question 2: Org-User-Role Kata (work in progress)
+
+======
+
+### The original README from Hireology
+### Instructions
+
+There are two parts to the Software Engineer Homework set. Part 1 is written answer, and Part 2 is a set of programmable problems. Please fork this repo to your GitHub account, add your work to the forked repo, and send a pull request when your work is complete.
+
+### Part 1 - Written Questions
 
 1. How can Memcache improve a site’s performance? Include a description about how data is stored and retrieved in a multi-node configuration.
 
 2. Please take a look at [this controller action](https://github.com/Hireology/homework/blob/master/some_controller.rb). Please tell us what you think of this code and how you would make it better.
 
-###Part 2 - Programming Problems
+### Part 2 - Programming Problems
 
 1) Write a program using regular expressions to parse a file where each line is of the following format:
 
