@@ -1,15 +1,15 @@
 ## Hireology Homework
 This repo contains my solutions to the Software Engineer homework set provided by Hireology.
 
-The solution set has yet to be completed. Below is a list of items that are included:
+The solution set has finally been completed. Below is a list of items that are included:
 
 #### Part 1 (Writen Questions)
-    + Question 1: Memcache (Completed)
-    + Question 2: SomeController (Completed)
++ Question 1: Memcache
++ Question 2: SomeController
 
 #### Part 2 (Programming Problems)
-    + Question 1: File Parser using Regex and JSON serializer. (Completed)
-    + Question 2: Org-User-Role Kata (work in progress)
++ Question 1: File Parser using Regex and JSON serializer.
++ Question 2: The Organizations - Users - Roles Kata
 
 ======
 
